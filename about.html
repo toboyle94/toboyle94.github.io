@@ -15,7 +15,7 @@
     <div id="nav-placeholder"></div>
     <div class="row">
       <div class="col-xs-12">
-        <p>I graduated Boston College in May of 2017 with a BS in Physics. While at BC, I was a TA for multiple programming courses including Computer Science I, and Introduction to Computational Investing. I also rowed on the Men's Crew team.<br><br>I am currently a full stack developer at a Financial Tech company that aggregates bond market data.<br><br>My interests include distance running, applied mathematics, reading novels, and the perfecting my homemade marinara sauce recipe.</p>
+        <p>I graduated Boston College in May of 2017 with a BS in Physics. While at BC, I was a TA for multiple programming courses including Computer Science I, and Introduction to Computational Investing. I also rowed on the Men's Crew team.<br><br>I am currently a full stack developer at a Financial Tech company that aggregates bond market data.<br><br>My interests include distance running, applied mathematics, reading novels, and perfecting my homemade marinara sauce recipe.</p>
       </div>
     </div>
     <footer>
@@ -25,6 +25,8 @@
       $(function(){ // load in the navbar and footer
         $("#nav-placeholder").load("nav.html");
         $("#foot-placeholder").load("footer.html");
+        $("#nav-home").removeClass("active");
+        $("#nav-about").addClass("active");
       });
     </script>
   </body>
