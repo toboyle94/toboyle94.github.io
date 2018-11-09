@@ -24,10 +24,11 @@
     </footer>
     <script>
       $(function(){ // load in the navbar and footer
-        $("#nav-placeholder").load("nav.html");
+        $("#nav-placeholder").load("nav.html", function () {
+          $("#nav-about").removeClass("active");
+          $("#nav-home").addClass("active");
+        });
         $("#foot-placeholder").load("footer.html");
-        $("#nav-about").removeClass("active");
-        $("#nav-home").addClass("active");
       });
     </script>
   </body>
