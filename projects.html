@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thomas O'Boyle</title>
+    <meta charset="utf-8">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <!-- bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>Movie Profit Predictor</h4>
+        <p>Support vector machine to classify film as profitable or not.<br><a href="https://github.com/wbowditch/movie-quality-profitability-predictor">git project</a></p>
+      </div>
+    </div>
+    <footer>
+      <div id="foot-placeholder"></div>
+    </footer>
+    <script>
+      $(function(){ // load in the navbar and footer
+        $("#nav-placeholder").load("nav.html", function () {
+          $("#nav-about").removeClass("active");
+          $("#nav-home").removeClass("active");
+          $("#nav-projects").addClass("active");
+        });
+        $("#foot-placeholder").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
