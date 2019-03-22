@@ -15,8 +15,8 @@
     <div id="nav-placeholder"></div>
     <div class="row">
       <div class="col-xs-12">
-        <h2>Hey there,</h2>
-        <p>I'm Tom O'Boyle, and this is my bad git site. <a href="/about">Click here</a> to see some of my interests and projects.</p>
+        <h2>Hi there,</h2>
+        <p>I'm Tom O'Boyle, and this is my basic git site. Click <a href="/about">here</a> to see some of my interests and <a href="/projects">here</a> for projects.<br><br>Below are links to my github and email as well as my LinkedIn.</p>
       </div>
     </div>
     <footer>
@@ -27,6 +27,7 @@
         $("#nav-placeholder").load("nav.html", function () {
           $("#nav-about").removeClass("active");
           $("#nav-home").addClass("active");
+          $("#nav-projects").removeClass("active");
         });
         $("#foot-placeholder").load("footer.html");
       });

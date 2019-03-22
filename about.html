@@ -24,8 +24,9 @@
     <script>
       $(function(){ // load in the navbar and footer
         $("#nav-placeholder").load("nav.html", function () {
-          $("#nav-home").removeClass("active");
           $("#nav-about").addClass("active");
+          $("#nav-home").removeClass("active");
+          $("#nav-projects").removeClass("active");
         });
         $("#foot-placeholder").load("footer.html");
       });
